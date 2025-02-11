@@ -1,0 +1,17 @@
+/home/usuario/ros2_ws/install/ros_drone_control/lib/ros_drone_control/battery_gps_node.py
+/home/usuario/ros2_ws/install/ros_drone_control/lib/ros_drone_control/mission_control_node.py
+/home/usuario/ros2_ws/install/ros_drone_control/share/ament_index/resource_index/package_run_dependencies/ros_drone_control
+/home/usuario/ros2_ws/install/ros_drone_control/share/ament_index/resource_index/parent_prefix_path/ros_drone_control
+/home/usuario/ros2_ws/install/ros_drone_control/share/ros_drone_control/environment/ament_prefix_path.sh
+/home/usuario/ros2_ws/install/ros_drone_control/share/ros_drone_control/environment/ament_prefix_path.dsv
+/home/usuario/ros2_ws/install/ros_drone_control/share/ros_drone_control/environment/path.sh
+/home/usuario/ros2_ws/install/ros_drone_control/share/ros_drone_control/environment/path.dsv
+/home/usuario/ros2_ws/install/ros_drone_control/share/ros_drone_control/local_setup.bash
+/home/usuario/ros2_ws/install/ros_drone_control/share/ros_drone_control/local_setup.sh
+/home/usuario/ros2_ws/install/ros_drone_control/share/ros_drone_control/local_setup.zsh
+/home/usuario/ros2_ws/install/ros_drone_control/share/ros_drone_control/local_setup.dsv
+/home/usuario/ros2_ws/install/ros_drone_control/share/ros_drone_control/package.dsv
+/home/usuario/ros2_ws/install/ros_drone_control/share/ament_index/resource_index/packages/ros_drone_control
+/home/usuario/ros2_ws/install/ros_drone_control/share/ros_drone_control/cmake/ros_drone_controlConfig.cmake
+/home/usuario/ros2_ws/install/ros_drone_control/share/ros_drone_control/cmake/ros_drone_controlConfig-version.cmake
+/home/usuario/ros2_ws/install/ros_drone_control/share/ros_drone_control/package.xml

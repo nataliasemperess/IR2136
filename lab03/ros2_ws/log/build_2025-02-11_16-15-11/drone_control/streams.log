@@ -1,0 +1,48 @@
+[0.011s] Invoking command in '/home/usuario/ros2_ws/build/drone_control': /usr/bin/cmake /home/usuario/ros2_ws/src/drone_control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/usuario/ros2_ws/install/drone_control
+[0.071s] -- The C compiler identification is GNU 10.5.0
+[0.127s] -- The CXX compiler identification is GNU 10.5.0
+[0.136s] -- Detecting C compiler ABI info
+[0.220s] -- Detecting C compiler ABI info - done
+[0.226s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.226s] -- Detecting C compile features
+[0.227s] -- Detecting C compile features - done
+[0.231s] -- Detecting CXX compiler ABI info
+[0.322s] -- Detecting CXX compiler ABI info - done
+[0.328s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.329s] -- Detecting CXX compile features
+[0.329s] -- Detecting CXX compile features - done
+[0.333s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.684s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.763s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[0.827s] -- Configuring done
+[0.832s] -- Generating done
+[0.833s] [33mCMake Warning:
+[0.833s]   Manually-specified variables were not used by the project:
+[0.833s] 
+[0.833s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[0.833s] 
+[0.833s] [0m
+[0.837s] -- Build files have been written to: /home/usuario/ros2_ws/build/drone_control
+[0.841s] Invoked command in '/home/usuario/ros2_ws/build/drone_control' returned '0': /usr/bin/cmake /home/usuario/ros2_ws/src/drone_control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/usuario/ros2_ws/install/drone_control
+[0.843s] Invoking command in '/home/usuario/ros2_ws/build/drone_control': /usr/bin/cmake --build /home/usuario/ros2_ws/build/drone_control -- -j6 -l6
+[0.884s] Invoked command in '/home/usuario/ros2_ws/build/drone_control' returned '0': /usr/bin/cmake --build /home/usuario/ros2_ws/build/drone_control -- -j6 -l6
+[0.896s] Invoking command in '/home/usuario/ros2_ws/build/drone_control': /usr/bin/cmake --install /home/usuario/ros2_ws/build/drone_control
+[0.904s] -- Install configuration: ""
+[0.904s] -- Installing: /home/usuario/ros2_ws/install/drone_control/lib/drone_control/battery_gps_node.py
+[0.905s] -- Installing: /home/usuario/ros2_ws/install/drone_control/lib/drone_control/mission_control_node.py
+[0.906s] -- Installing: /home/usuario/ros2_ws/install/drone_control/share/ament_index/resource_index/package_run_dependencies/drone_control
+[0.907s] -- Installing: /home/usuario/ros2_ws/install/drone_control/share/ament_index/resource_index/parent_prefix_path/drone_control
+[0.908s] -- Installing: /home/usuario/ros2_ws/install/drone_control/share/drone_control/environment/ament_prefix_path.sh
+[0.908s] -- Installing: /home/usuario/ros2_ws/install/drone_control/share/drone_control/environment/ament_prefix_path.dsv
+[0.909s] -- Installing: /home/usuario/ros2_ws/install/drone_control/share/drone_control/environment/path.sh
+[0.910s] -- Installing: /home/usuario/ros2_ws/install/drone_control/share/drone_control/environment/path.dsv
+[0.911s] -- Installing: /home/usuario/ros2_ws/install/drone_control/share/drone_control/local_setup.bash
+[0.912s] -- Installing: /home/usuario/ros2_ws/install/drone_control/share/drone_control/local_setup.sh
+[0.913s] -- Installing: /home/usuario/ros2_ws/install/drone_control/share/drone_control/local_setup.zsh
+[0.913s] -- Installing: /home/usuario/ros2_ws/install/drone_control/share/drone_control/local_setup.dsv
+[0.914s] -- Installing: /home/usuario/ros2_ws/install/drone_control/share/drone_control/package.dsv
+[0.915s] -- Installing: /home/usuario/ros2_ws/install/drone_control/share/ament_index/resource_index/packages/drone_control
+[0.916s] -- Installing: /home/usuario/ros2_ws/install/drone_control/share/drone_control/cmake/drone_controlConfig.cmake
+[0.917s] -- Installing: /home/usuario/ros2_ws/install/drone_control/share/drone_control/cmake/drone_controlConfig-version.cmake
+[0.918s] -- Installing: /home/usuario/ros2_ws/install/drone_control/share/drone_control/package.xml
+[0.921s] Invoked command in '/home/usuario/ros2_ws/build/drone_control' returned '0': /usr/bin/cmake --install /home/usuario/ros2_ws/build/drone_control
