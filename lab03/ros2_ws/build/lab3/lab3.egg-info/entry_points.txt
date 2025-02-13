@@ -1,0 +1,3 @@
+[console_scripts]
+battery_gps = lab3.battery_gps_node:main
+mission_control = lab3.mission_control_node:main

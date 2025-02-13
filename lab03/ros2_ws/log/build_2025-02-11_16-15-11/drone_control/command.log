@@ -1,6 +1,0 @@
-Invoking command in '/home/usuario/ros2_ws/build/drone_control': /usr/bin/cmake /home/usuario/ros2_ws/src/drone_control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/usuario/ros2_ws/install/drone_control
-Invoked command in '/home/usuario/ros2_ws/build/drone_control' returned '0': /usr/bin/cmake /home/usuario/ros2_ws/src/drone_control -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/usuario/ros2_ws/install/drone_control
-Invoking command in '/home/usuario/ros2_ws/build/drone_control': /usr/bin/cmake --build /home/usuario/ros2_ws/build/drone_control -- -j6 -l6
-Invoked command in '/home/usuario/ros2_ws/build/drone_control' returned '0': /usr/bin/cmake --build /home/usuario/ros2_ws/build/drone_control -- -j6 -l6
-Invoking command in '/home/usuario/ros2_ws/build/drone_control': /usr/bin/cmake --install /home/usuario/ros2_ws/build/drone_control
-Invoked command in '/home/usuario/ros2_ws/build/drone_control' returned '0': /usr/bin/cmake --install /home/usuario/ros2_ws/build/drone_control

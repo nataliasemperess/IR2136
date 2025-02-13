@@ -1,0 +1,31 @@
+[0.996s] Invoking command in '/home/usuario/ros2_ws/src/lab3': PYTHONPATH=/home/usuario/ros2_ws/build/lab3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/usuario/ros2_ws/install/lab3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab3 build --build-base /home/usuario/ros2_ws/build/lab3/build install --record /home/usuario/ros2_ws/build/lab3/install.log --single-version-externally-managed install_data
+[1.171s] /home/usuario/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+[1.171s]   warnings.warn(msg)
+[1.350s] running egg_info
+[1.379s] writing ../../build/lab3/lab3.egg-info/PKG-INFO
+[1.379s] writing dependency_links to ../../build/lab3/lab3.egg-info/dependency_links.txt
+[1.380s] writing entry points to ../../build/lab3/lab3.egg-info/entry_points.txt
+[1.380s] writing requirements to ../../build/lab3/lab3.egg-info/requires.txt
+[1.380s] writing top-level names to ../../build/lab3/lab3.egg-info/top_level.txt
+[1.439s] reading manifest file '../../build/lab3/lab3.egg-info/SOURCES.txt'
+[1.440s] writing manifest file '../../build/lab3/lab3.egg-info/SOURCES.txt'
+[1.441s] running build
+[1.441s] running build_py
+[1.441s] copying lab3/battery_gps_node.py -> /home/usuario/ros2_ws/build/lab3/build/lib/lab3
+[1.442s] copying lab3/mission_control_node.py -> /home/usuario/ros2_ws/build/lab3/build/lib/lab3
+[1.443s] copying lab3/__init__.py -> /home/usuario/ros2_ws/build/lab3/build/lib/lab3
+[1.443s] running install
+[1.446s] running install_lib
+[1.476s] copying /home/usuario/ros2_ws/build/lab3/build/lib/lab3/mission_control_node.py -> /home/usuario/ros2_ws/install/lab3/lib/python3.10/site-packages/lab3
+[1.477s] byte-compiling /home/usuario/ros2_ws/install/lab3/lib/python3.10/site-packages/lab3/mission_control_node.py to mission_control_node.cpython-310.pyc
+[1.478s] running install_data
+[1.479s] copying resource/lab3 -> /home/usuario/ros2_ws/install/lab3/share/ament_index/resource_index/packages
+[1.479s] copying package.xml -> /home/usuario/ros2_ws/install/lab3/share/lab3
+[1.480s] running install_egg_info
+[1.510s] removing '/home/usuario/ros2_ws/install/lab3/lib/python3.10/site-packages/lab3-0.0.0-py3.10.egg-info' (and everything under it)
+[1.510s] Copying ../../build/lab3/lab3.egg-info to /home/usuario/ros2_ws/install/lab3/lib/python3.10/site-packages/lab3-0.0.0-py3.10.egg-info
+[1.517s] running install_scripts
+[1.693s] Installing battery_gps script to /home/usuario/ros2_ws/install/lab3/lib/lab3
+[1.693s] Installing mission_control script to /home/usuario/ros2_ws/install/lab3/lib/lab3
+[1.693s] writing list of installed files to '/home/usuario/ros2_ws/build/lab3/install.log'
+[1.711s] Invoked command in '/home/usuario/ros2_ws/src/lab3' returned '0': PYTHONPATH=/home/usuario/ros2_ws/build/lab3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/usuario/ros2_ws/install/lab3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab3 build --build-base /home/usuario/ros2_ws/build/lab3/build install --record /home/usuario/ros2_ws/build/lab3/install.log --single-version-externally-managed install_data
