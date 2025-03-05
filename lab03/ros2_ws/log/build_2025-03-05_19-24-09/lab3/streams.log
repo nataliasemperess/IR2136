@@ -1,0 +1,29 @@
+[1.941s] Invoking command in '/home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/src/lab3': PYTHONPATH=/home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab3 build --build-base /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/build install --record /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/install.log --single-version-externally-managed install_data
+[2.384s] /home/natalia/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+[2.384s]   warnings.warn(msg)
+[2.652s] running egg_info
+[2.696s] writing ../../build/lab3/lab3.egg-info/PKG-INFO
+[2.697s] writing dependency_links to ../../build/lab3/lab3.egg-info/dependency_links.txt
+[2.698s] writing entry points to ../../build/lab3/lab3.egg-info/entry_points.txt
+[2.698s] writing requirements to ../../build/lab3/lab3.egg-info/requires.txt
+[2.699s] writing top-level names to ../../build/lab3/lab3.egg-info/top_level.txt
+[2.791s] reading manifest file '../../build/lab3/lab3.egg-info/SOURCES.txt'
+[2.794s] writing manifest file '../../build/lab3/lab3.egg-info/SOURCES.txt'
+[2.794s] running build
+[2.794s] running build_py
+[2.794s] copying lab3/battery_gps_node.py -> /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/build/lib/lab3
+[2.795s] copying lab3/__init__.py -> /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/build/lib/lab3
+[2.795s] copying lab3/mission_control_node.py -> /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/build/lib/lab3
+[2.796s] running install
+[2.806s] running install_lib
+[2.852s] running install_data
+[2.852s] copying resource/lab3 -> /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/share/ament_index/resource_index/packages
+[2.853s] copying package.xml -> /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/share/lab3
+[2.853s] running install_egg_info
+[2.906s] removing '/home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/python3.10/site-packages/lab3-0.0.0-py3.10.egg-info' (and everything under it)
+[2.907s] Copying ../../build/lab3/lab3.egg-info to /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/python3.10/site-packages/lab3-0.0.0-py3.10.egg-info
+[2.909s] running install_scripts
+[3.251s] Installing battery_gps script to /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/lab3
+[3.251s] Installing mission_control script to /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/lab3
+[3.252s] writing list of installed files to '/home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/install.log'
+[3.315s] Invoked command in '/home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/src/lab3' returned '0': PYTHONPATH=/home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lab3 build --build-base /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/build install --record /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/install.log --single-version-externally-managed install_data

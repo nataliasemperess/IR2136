@@ -7,7 +7,6 @@ import sys
 import time
 
 class MissionControlNode(Node):
-
     def __init__(self):
         super().__init__('mission_control_node')
 
@@ -18,16 +17,19 @@ class MissionControlNode(Node):
 
         # Publicador de la posición GPS objetivo
         self.target_gps_pub = self.create_publisher(Point, 'target_gps', 10)
-
-        # Suscriptor para la posición GPS objetivo
+        
+        # Suscriptor para el estado de la batería
+        self.create_subscription(Float32, 'battery_status', self.battery_callback, 10)
+        
+        # Suscriptor para recibir la posición GPS objetivo
         self.create_subscription(Point, 'target_gps', self.target_gps_callback, 10)
 
-        # Verificar que se pasen correctamente los argumentos
+        # Verificar argumentos
         if len(sys.argv) != 4:
             self.get_logger().error("Uso: mission_control_node.py <latitud> <longitud> <altitud>")
             sys.exit(1)
 
-        # Extraer latitud, longitud y altitud de los argumentos
+        # Extraer coordenadas
         self.target_lat = float(sys.argv[1])
         self.target_lon = float(sys.argv[2])
         self.target_alt = float(sys.argv[3])
@@ -36,49 +38,39 @@ class MissionControlNode(Node):
         self.set_mode('GUIDED')
         self.arm_vehicle()
         self.takeoff()
-
+        
         # Esperar antes de enviar destino
         time.sleep(10)
         self.publish_target_gps(self.target_lat, self.target_lon, self.target_alt)
-
-    # Método para armar el dron.
+    
     def arm_vehicle(self):
         self.connection.mav.command_long_send(
             self.connection.target_system,
             self.connection.target_component,
             mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,
-            0,  # Confirmación
-            1,  # Arm
-            0, 0, 0, 0, 0, 0, 0
-        )
+            0, 1, 0, 0, 0, 0, 0, 0)
         self.get_logger().info("Drone armed.")
-
-    # Método para hacer despegar el dron
+    
     def takeoff(self):
         self.connection.mav.command_long_send(
             self.connection.target_system,
             self.connection.target_component,
             mavutil.mavlink.MAV_CMD_NAV_TAKEOFF,
-            0,  # Confirmación
-            1,  # Arm
-            0, 0, 0, 0, 0, 0, self.target_alt  # Altitud deseada
-        )
-        self.get_logger().info("Taking off")
-
-    # Método para cambiar el modo del dron
+            0, 0, 0, 0, 0, 0, 0, self.target_alt)
+        self.get_logger().info("Taking off.")
+    
     def set_mode(self, mode):
-        mode_dict = {
-            'GUIDED': mavutil.mavlink.MAV_MODE_GUIDED_ARMED,
-            'STABILIZE': mavutil.mavlink.MAV_MODE_STABILIZE_ARMED,
-            'MANUAL': mavutil.mavlink.MAV_MODE_MANUAL_ARMED,
+        mode_mapping = {
+            'GUIDED': 4,  # GUIDED mode en ArduPilot
+            'LAND': 9  # LAND mode en ArduPilot
         }
-
-        mode_value = mode_dict.get(mode, mavutil.mavlink.MAV_MODE_GUIDED_ARMED)
-        self.connection.mav.set_mode(self.connection.target_system, mode_value)
-        self.get_logger().info(f"Mode changed to {mode}")
-
-
-    # Publica la posición GPS objetivo 
+        if mode in mode_mapping:
+            self.connection.mav.set_mode_send(
+                self.connection.target_system,
+                mavutil.mavlink.MAV_MODE_FLAG_CUSTOM_MODE_ENABLED,
+                mode_mapping[mode])
+            self.get_logger().info(f"Mode changed to {mode}")
+    
     def publish_target_gps(self, lat, lon, alt):
         target_msg = Point()
         target_msg.x = lat
@@ -87,11 +79,34 @@ class MissionControlNode(Node):
         self.target_gps_pub.publish(target_msg)
         self.get_logger().info(f"Target GPS position published: {lat}, {lon}, {alt}")
     
+    def target_gps_callback(self, msg):
+        """Callback para recibir la posición GPS objetivo."""
+        lat, lon, alt = msg.x, msg.y, msg.z
+        self.get_logger().info(f"Recibida posición GPS objetivo: Lat={lat}, Lon={lon}, Alt={alt}m")
+
+        # Enviar la posición GPS al dron
+        self.send_gps_to_drone(lat, lon, alt)
 
     def battery_callback(self, msg):
         if msg.data < 20.0:
             self.get_logger().warn("Low battery! Initiating landing...")
             self.land_drone()
+    
+    def send_gps_to_drone(self, lat, lon, alt):
+        self.connection.mav.set_position_target_global_int_send(
+            0,
+            self.connection.target_system,
+            self.connection.target_component,
+            mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT,
+            0b110111111000,
+            int(lat * 1e7),
+            int(lon * 1e7),
+            alt,
+            0, 0, 0,
+            0, 0, 0,
+            0, 0
+        )
+        self.get_logger().info(f"Enviando al dron: Lat={lat}, Lon={lon}, Alt={alt}m")
     
     def land_drone(self):
         self.connection.mav.command_long_send(
@@ -100,7 +115,6 @@ class MissionControlNode(Node):
             mavutil.mavlink.MAV_CMD_NAV_LAND,
             0, 0, 0, 0, 0, 0, 0, 0)
         self.get_logger().info("Landing command sent.")
-
 
 def main(args=None):
     rclpy.init(args=args)
