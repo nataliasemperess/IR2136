@@ -44,7 +44,8 @@ source /opt/ros/humble/setup.bash
 cd ~/Documentos/GitHub/IR2136/lab03/ros2_ws
 colcon build
 source install/setup.bash
-ros2 run lab3 mission_control -- 
+ros2 run lab3 mission_control -- -35.36206693 149.156797 10
+
 
 
 
