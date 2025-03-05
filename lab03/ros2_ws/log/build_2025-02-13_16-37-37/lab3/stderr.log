@@ -1,3 +1,0 @@
-/home/usuario/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
-  warnings.warn(msg)
-Sorry: TabError: inconsistent use of tabs and spaces in indentation (mission_control_node.py, line 25)

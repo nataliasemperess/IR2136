@@ -1,0 +1,63 @@
+[0.000000] (-) TimerEvent: {}
+[0.000946] (lab3) JobQueued: {'identifier': 'lab3', 'dependencies': OrderedDict()}
+[0.001029] (lab3) JobStarted: {'identifier': 'lab3'}
+[0.099713] (-) TimerEvent: {}
+[0.200106] (-) TimerEvent: {}
+[0.300459] (-) TimerEvent: {}
+[0.401548] (-) TimerEvent: {}
+[0.501987] (-) TimerEvent: {}
+[0.602363] (-) TimerEvent: {}
+[0.702737] (-) TimerEvent: {}
+[0.803144] (-) TimerEvent: {}
+[0.903523] (-) TimerEvent: {}
+[1.003890] (-) TimerEvent: {}
+[1.104264] (-) TimerEvent: {}
+[1.167757] (lab3) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/lab3', 'build', '--build-base', '/home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/build', 'install', '--record', '/home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/src/lab3', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'no_proxy': 'localhost,127.0.0.0/8,::1', 'USER': 'natalia', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/natalia', 'OLDPWD': '/home/natalia/Documentos/GitHub', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.0/8,::1', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2344', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'natalia', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'natalia', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/home/natalia/ardupilot_gazebo/models:/home/natalia/.gazebo/models:/home/natalia/.gazebo/models:/home/natalia/.gazebo/models/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/spark/bin:/opt/spark/bin:/opt/spark/bin:/opt/spark/bin:/opt/ros/humble/bin:/usr/lib/ccache:/home/natalia/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/natalia/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/natalia/.local/bin', 'SESSION_MANAGER': 'local/nataliasemp:@/tmp/.ICE-unix/2318,unix/nataliasemp:/tmp/.ICE-unix/2318', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/6e21740c_b823_40a9_8903_162bdd96dbc9', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'es_ES.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LRMQ22', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.257', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'DOCKER_HOST': 'unix:///var/run/docker.sock', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo-11::/usr/share/gazebo-11', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3', 'TURTLEBOT3_MODEL': 'burger', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/home/natalia/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/python3.10/site-packages:/opt/spark/python:/opt/spark/python:/opt/spark/python:/opt/spark/python:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'SPARK_HOME': '/opt/spark'}, 'shell': False}
+[1.204386] (-) TimerEvent: {}
+[1.304762] (-) TimerEvent: {}
+[1.366434] (lab3) StderrLine: {'line': b"/home/natalia/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[1.366787] (lab3) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[1.404869] (-) TimerEvent: {}
+[1.505224] (-) TimerEvent: {}
+[1.513776] (lab3) StdoutLine: {'line': b'running egg_info\n'}
+[1.537183] (lab3) StdoutLine: {'line': b'creating ../../build/lab3/lab3.egg-info\n'}
+[1.537578] (lab3) StdoutLine: {'line': b'writing ../../build/lab3/lab3.egg-info/PKG-INFO\n'}
+[1.537865] (lab3) StdoutLine: {'line': b'writing dependency_links to ../../build/lab3/lab3.egg-info/dependency_links.txt\n'}
+[1.538139] (lab3) StdoutLine: {'line': b'writing entry points to ../../build/lab3/lab3.egg-info/entry_points.txt\n'}
+[1.538450] (lab3) StdoutLine: {'line': b'writing requirements to ../../build/lab3/lab3.egg-info/requires.txt\n'}
+[1.538672] (lab3) StdoutLine: {'line': b'writing top-level names to ../../build/lab3/lab3.egg-info/top_level.txt\n'}
+[1.538981] (lab3) StdoutLine: {'line': b"writing manifest file '../../build/lab3/lab3.egg-info/SOURCES.txt'\n"}
+[1.590062] (lab3) StdoutLine: {'line': b"reading manifest file '../../build/lab3/lab3.egg-info/SOURCES.txt'\n"}
+[1.591388] (lab3) StdoutLine: {'line': b"writing manifest file '../../build/lab3/lab3.egg-info/SOURCES.txt'\n"}
+[1.591612] (lab3) StdoutLine: {'line': b'running build\n'}
+[1.591831] (lab3) StdoutLine: {'line': b'running build_py\n'}
+[1.592048] (lab3) StdoutLine: {'line': b'creating /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/build/lib/lab3\n'}
+[1.592254] (lab3) StdoutLine: {'line': b'copying lab3/battery_gps_node.py -> /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/build/lib/lab3\n'}
+[1.592487] (lab3) StdoutLine: {'line': b'copying lab3/__init__.py -> /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/build/lib/lab3\n'}
+[1.592704] (lab3) StdoutLine: {'line': b'copying lab3/mission_control_node.py -> /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/build/lib/lab3\n'}
+[1.593014] (lab3) StdoutLine: {'line': b'running install\n'}
+[1.598389] (lab3) StdoutLine: {'line': b'running install_lib\n'}
+[1.605331] (-) TimerEvent: {}
+[1.622317] (lab3) StdoutLine: {'line': b'creating /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/python3.10/site-packages/lab3\n'}
+[1.622699] (lab3) StdoutLine: {'line': b'copying /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/build/lib/lab3/battery_gps_node.py -> /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/python3.10/site-packages/lab3\n'}
+[1.622941] (lab3) StdoutLine: {'line': b'copying /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/build/lib/lab3/__init__.py -> /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/python3.10/site-packages/lab3\n'}
+[1.623102] (lab3) StdoutLine: {'line': b'copying /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/build/lib/lab3/mission_control_node.py -> /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/python3.10/site-packages/lab3\n'}
+[1.623554] (lab3) StdoutLine: {'line': b'byte-compiling /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/python3.10/site-packages/lab3/battery_gps_node.py to battery_gps_node.cpython-310.pyc\n'}
+[1.624386] (lab3) StdoutLine: {'line': b'byte-compiling /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/python3.10/site-packages/lab3/__init__.py to __init__.cpython-310.pyc\n'}
+[1.624623] (lab3) StdoutLine: {'line': b'byte-compiling /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/python3.10/site-packages/lab3/mission_control_node.py to mission_control_node.cpython-310.pyc\n'}
+[1.625518] (lab3) StdoutLine: {'line': b'running install_data\n'}
+[1.625854] (lab3) StdoutLine: {'line': b'creating /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/share/ament_index/resource_index/packages\n'}
+[1.626120] (lab3) StdoutLine: {'line': b'copying resource/lab3 -> /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/share/ament_index/resource_index/packages\n'}
+[1.626363] (lab3) StdoutLine: {'line': b'copying package.xml -> /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/share/lab3\n'}
+[1.626547] (lab3) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.654404] (lab3) StdoutLine: {'line': b'Copying ../../build/lab3/lab3.egg-info to /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/python3.10/site-packages/lab3-0.0.0-py3.10.egg-info\n'}
+[1.655500] (lab3) StdoutLine: {'line': b'running install_scripts\n'}
+[1.705440] (-) TimerEvent: {}
+[1.805819] (-) TimerEvent: {}
+[1.849430] (lab3) StdoutLine: {'line': b'Installing battery_gps script to /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/lab3\n'}
+[1.849760] (lab3) StdoutLine: {'line': b'Installing mission_control script to /home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/install/lab3/lib/lab3\n'}
+[1.850100] (lab3) StdoutLine: {'line': b"writing list of installed files to '/home/natalia/Documentos/GitHub/IR2136/lab03/ros2_ws/build/lab3/install.log'\n"}
+[1.890202] (lab3) CommandEnded: {'returncode': 0}
+[1.905932] (-) TimerEvent: {}
+[1.927335] (lab3) JobEnded: {'identifier': 'lab3', 'rc': 0}
+[1.929036] (-) EventReactorShutdown: {}
