@@ -26,3 +26,27 @@ git submodule update --init --recursive
 cd ~/ardupilot/ArduCopter
 sim_vehicle.py -v ArduCopter -w --console --map
 ```
+## TERMINAL 2 - battery_gps_node.py
+
+```bash
+source /opt/ros/humble/setup.bash
+cd ~/Documentos/GitHub/IR2136/lab03/ros2_ws
+colcon build
+source install/setup.bash
+ros2 run lab3 battery_gps 
+
+```
+
+## TERMINAL 3 - mission_control_node.py
+
+```bash
+source /opt/ros/humble/setup.bash
+cd ~/Documentos/GitHub/IR2136/lab03/ros2_ws
+colcon build
+source install/setup.bash
+ros2 run lab3 mission_control -- 
+
+
+
+```
+```
